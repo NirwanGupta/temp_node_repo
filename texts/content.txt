@@ -1,1 +1,10 @@
-nsdovnsov
+npm init = to initialise a project
+install all modules with npm install
+
+properties of package.json
+
+1) name: name of the module that package.json is describing
+2) version: describes the current version of the module
+3) description: contains the human readable discription of that module
+4) keywords: array with string elements with each element as one of project keywords
+5) main: direction to entry point to module

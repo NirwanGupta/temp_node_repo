@@ -4,8 +4,7 @@
   "description": "",
   "main": "file.js",
   "scripts": {
-    "start": "node lodash.js",
-    "dev": "nodemon lodash.js"
+    "start": "node lodash.js"
   },
   "author": "",
   "license": "ISC",
