@@ -1,4 +1,5 @@
 //  method 3
+//  meyhod 3 is the beat method
 const {readFile, writeFile} = require(`fs`).promises;
 
 const start = async() => {
