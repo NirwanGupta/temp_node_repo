@@ -38,4 +38,3 @@
 // function_called.name(values.name);   
 
 // const val = require();
-require(`./file`);

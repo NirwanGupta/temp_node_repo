@@ -14,7 +14,7 @@ const start = async() => {
         console.log(first, second);
     } catch (error) {
         console.log(error);
-    }
+    } 
 }
 
 start();
