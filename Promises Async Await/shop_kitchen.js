@@ -1,4 +1,4 @@
-const is_shop_open = true;
+const is_shop_open = false;
 let stocks = {
     Fruits : ["strawberry", "grapes", "banana", "apple"],
     liquid : ["water", "ice"],
@@ -37,7 +37,7 @@ let stocks = {
         await time(2000);
         console.log(`The customer has been served`);
     }
-    catch {
+    catch (error) {
         console.log("The customer left", error);
     }
     finally {
