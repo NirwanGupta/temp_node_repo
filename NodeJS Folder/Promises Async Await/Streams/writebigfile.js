@@ -6,10 +6,10 @@ function append(i) {
         appendFile(
             `./texts/BigFile.txt`,
             `Hello guys ${i}\n`,
-            (error) => {
-                if(error)
+            (err,result) => {
+                if(err)
                 {
-                    console.log(error,"\n");
+                    console.log(err,"\n");
                     return;
                 }
             }

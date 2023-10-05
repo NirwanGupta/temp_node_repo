@@ -1,7 +1,8 @@
 const { createReadStream } = require(`fs`);
 
-stream = createReadStream(`./texts/BigFile.txt`, {
+stream = createReadStream(`../texts/BigFile.txt`, {
     highWaterMark: 30000,
+    encoding: 'utf8',
 });
 
 //  defaulr: 64 bit
@@ -22,6 +23,9 @@ stream = createReadStream(`./texts/BigFile.txt`, {
 stream.on(`data`,(result) => {
     console.log(result);
 })
-stream.on(`data`,(err) => {
+
+//  string alag alag hi dalni hoti hai dono .on me
+
+stream.on(`error`,(err) => {
     console.log(err);
 })

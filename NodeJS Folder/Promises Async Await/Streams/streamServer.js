@@ -10,6 +10,10 @@ const server = createServer((req,res) => {
     stream.on(`open`,() => {
         stream.pipe(res);
     })
+
+    //  error ke lie alag se stream.on banana hota hai varna agar sath me kro to tera code asal me hi error de dega
+    //  string alag alag hi dalni hoti hai dono .on me
+
     stream.on('error',(err) => {
         console.log(err);
     })
